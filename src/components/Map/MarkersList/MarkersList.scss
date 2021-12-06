@@ -1,0 +1,17 @@
+
+.markers-list{
+  background-color: floralwhite;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #484848;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  padding: 15px;
+  width: 100px;
+  max-height: 80%;
+  overflow: auto;
+  z-index: 100;
+  &__item{
+    margin: 5px 0 0 0;
+  }
+}
