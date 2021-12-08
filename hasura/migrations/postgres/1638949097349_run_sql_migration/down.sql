@@ -1,0 +1,8 @@
+-- Could not auto-generate a down migration.
+-- Please write an appropriate down migration for the SQL below:
+-- CREATE EXTENSION IF NOT EXISTS postgis;
+-- CREATE TABLE capitals (
+--   id SERIAL PRIMARY KEY,
+--   capital TEXT,
+--   location GEOGRAPHY(Point)
+-- );
