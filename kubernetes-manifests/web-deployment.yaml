@@ -27,13 +27,13 @@ spec:
         io.kompose.service: web
     spec:
       containers:
-        - image: web
+        - image: teztwo/gmaps_react-web
           name: web
           ports:
             - containerPort: 3000
           resources: {}
           volumeMounts:
-            - mountPath: /gmaps/
+            - mountPath: /gmaps_react/
               name: web-claim0
       restartPolicy: Always
       volumes:

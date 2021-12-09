@@ -1,11 +1,11 @@
 version: '3'
 services:
   web:
-    build: ""
+    image: teztwo/gmaps_react-web
     ports:
       - "3000:3000"
     volumes:
-      - ./:/gmaps/
+      - ./:/gmaps_react/
     labels:
       kompose.service.expose: "true"
   postgres:
@@ -32,7 +32,7 @@ services:
       ## enable the console served by server
       HASURA_GRAPHQL_ENABLE_CONSOLE: "false" # set to "false" to disable console
       ## enable debugging mode. It is recommended to disable this in production
-      HASURA_GRAPHQL_DEV_MODE: "false"
+      HASURA_GRAPHQL_DEV_MODE: "true"
       HASURA_GRAPHQL_ENABLED_LOG_TYPES: startup, http-log, webhook-log, websocket-log, query-log
       ## uncomment next line to set an admin secret
       # HASURA_GRAPHQL_ADMIN_SECRET: myadminsecretkey
