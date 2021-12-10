@@ -14,8 +14,7 @@ spec:
   selector:
     matchLabels:
       io.kompose.service: web
-  strategy:
-    type: Recreate
+  strategy: {}
   template:
     metadata:
       annotations:
@@ -27,17 +26,10 @@ spec:
         io.kompose.service: web
     spec:
       containers:
-        - image: teztwo/gmaps_react-web
+        - image: teztwo/gmaps_react-web:latest
           name: web
           ports:
             - containerPort: 3000
           resources: {}
-          volumeMounts:
-            - mountPath: /gmaps_react/
-              name: web-claim0
       restartPolicy: Always
-      volumes:
-        - name: web-claim0
-          persistentVolumeClaim:
-            claimName: web-claim0
 status: {}

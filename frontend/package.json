@@ -2,7 +2,6 @@
   "name": "gmaps_react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://philipindev.github.io/gmaps_react/",
   "dependencies": {
     "@googlemaps/react-wrapper": "^1.1.16",
     "@reduxjs/toolkit": "^1.6.2",
@@ -21,6 +20,7 @@
     "react-redux": "^7.2.6",
     "react-scripts": "4.0.3",
     "redux-typescript": "^1.2.1",
+    "serve": "^13.0.2",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   },
@@ -28,7 +28,7 @@
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "postinstall":"tsc",
+    "postinstall": "tsc",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
